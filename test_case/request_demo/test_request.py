@@ -70,6 +70,7 @@ def test_post_form(pub_data):
     h = {"token":pub_data["token"]}
     print(h)
     r = requests.post("http://qa.yansl.com:8084/user/lock", data=payload,headers=h)
+
     print(r.text)
 
 def test_post_upload_file(pub_data):
